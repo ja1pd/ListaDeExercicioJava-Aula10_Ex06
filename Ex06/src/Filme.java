@@ -14,12 +14,10 @@ public class Filme {
     }
 
     public void exibirDetalhes() {
-        System.out.println("====== Detalhes do Filme ======");
         System.out.println("Título: " + titulo + " (" + anoLancamento + ")");
         System.out.println("Diretor: " + diretor);
         System.out.println("Duração: " + duracaoFormatada());
-        System.out.printf("Nota: %.1f ★%n", nota);
+        System.out.println("Nota: " + nota + " ★");
         System.out.println("Recomendado: " + (recomendado() ? "SIM" : "NÃO"));
-        System.out.println("===============================");
     }
 }
